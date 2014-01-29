@@ -1,79 +1,182 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Espaço Premium : Site estático para o Espaço Premium." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Espaço Premium</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/luiseduardobrito/espacopremium">View on GitHub</a>
-
-          <h1 id="project_title">Espaço Premium</h1>
-          <h2 id="project_tagline">Site estático para o Espaço Premium.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/luiseduardobrito/espacopremium/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/luiseduardobrito/espacopremium/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Espaço Premium maintained by <a href="https://github.com/luiseduardobrito">luiseduardobrito</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content=""/>
+		<title>Espaço Premium</title>
+		<link rel="icon" href="resources/images/favicon.ico"/>
+		<link rel="stylesheet" href="resources/css/style.css"/>
+		<link rel="stylesheet" href="resources/css/framework.css"/>
+		<script type="text/javascript" src="resources/js/jquery.js"></script>
+		<script type="text/javascript" src="resources/js/spin.js"></script>
+		<script type="text/javascript" src="resources/js/plugins.js"></script>
+		<script type="text/javascript" src="resources/js/analytics.js"></script>
+	</head>
+	<body>
+		<div class="spinload"></div>
+		<div id="gallery">
+			<canvas class="animation"></canvas>
+			<div class="slide slow" style="background-image: url(resources/images/slide-1.jpg); background-size: cover;"></div>
+			<div class="slide slow" style="background-image: url(resources/images/slide-2.jpg); background-size: cover;"></div>
+			<div class="slide slow" style="background-image: url(resources/images/slide-3.jpg); background-size: cover;"></div>
+			<div class="slide slow" style="background-image: url(resources/images/slide-4.jpg); background-size: cover;"></div>
+			<div class="content">
+				<div class="wrap small">
+					<div class="coverage">
+						<img class="avatar" src="resources/images/place160.gif" alt="Avatar"/>
+					</div>
+				</div>
+				<div class="wrap medium">
+					<h1 class="name">Espaço Premium</h1>
+					<h2 class="job">Eventos / Festas / Shows</h2>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function () {
+					$("#gallery").engine();
+					$("#gallery").anim();
+				});
+			</script>
+		</div>
+		<div class="interface">
+			<div id="about">
+				<div class="content effect slow">
+					<div class="wrap medium">
+						<div class="box">
+							<h3 class="topic">SOBRE</h3>
+						</div>
+					</div>
+					<div class="wrap large">
+						<p class="quote">The main purpose is to build something that you need and that you will love.</p>
+						<p class="quote">I lead powerful projects through innovative and modern technologies.</p>
+						<p class="quote">My work says a lot about me, passionate about all I do.</p>
+					</div>
+				</div>
+				<script type="text/javascript"></script>
+			</div>
+			<div id="edu">
+				<div class="content effect slow">
+					<div class="wrap medium">
+						<div class="box">
+							<h3 class="topic">ÚLTIMOS EVENTOS</h3>
+						</div>
+					</div>
+					<div class="wrap medium">
+						<div class="left size-6 responsive">
+							<a class="coverage" href="" target="_blank"><img class="icon border fast" src="resources/images/diploma.png" width="256" height="256" alt="Diploma"/></a>
+							<p class="date">Nov / 2013</p>
+							<h4 class="diploma">CORPORATIVO<br />XI Encontro de Observadores de Saci</h4>
+							<p class="desc">Sociedade dos Observadores de Saci<br />www.sosaci.org</p>
+						</div>
+						<div class="left size-6 responsive">
+							<a class="coverage" href="" target="_blank"><img class="icon border fast" src="resources/images/diploma.png" width="256" height="256" alt="Diploma"/></a>
+							<p class="date">Nov / 2013</p>
+							<h4 class="diploma">CORPORATIVO<br />XI Encontro de Observadores de Saci</h4>
+							<p class="desc">Sociedade dos Observadores de Saci<br />www.sosaci.org</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<script type="text/javascript"></script>
+			</div>
+			<div id="contact">
+				<div class="content effect slow">
+					<div class="wrap medium">
+						<div class="box">
+							<h3 class="topic">CONTATO</h3>
+						</div>
+					</div>
+					<div class="wrap small">
+						<form class="data">
+							<div class="collection">
+								<input class="field" type="text" placeholder="Nome Completo"/>
+							</div>
+							<div class="collection">
+								<input class="field" type="text" placeholder="Endereço de Email"/>
+							</div>
+							<div class="collection">
+								<input class="field" type="text" placeholder="Assunto do Contato"/>
+							</div>
+							<div class="collection">
+								<textarea class="area" placeholder="Mensagem"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="wrap small">
+						<a class="button border fast" href="ajax.php">ENVIAR</a>
+					</div>
+					<div class="wrap large">
+						<div class="left size-6">
+							<div class="right">
+								<a class="coverage" href="http://www.facebook.com" target="_blank"><img class="icon border fast" src="resources/images/icon-facebook.png" width="256" height="256" alt="Facebook"/></a>
+							</div>
+							<div class="right">
+								<a class="coverage" href="http://www.twitter.com" target="_blank"><img class="icon border fast" src="resources/images/icon-twitter.png" width="256" height="256" alt="Twitter"/></a>
+							</div>
+							<div class="right">
+								<a class="coverage" href="http://www.pinterest.com" target="_blank"><img class="icon border fast" src="resources/images/icon-pinterest.png" width="256" height="256" alt="Pinterest"/></a>
+							</div>
+							<div class="right">
+								<a class="coverage" href="http://www.tumblr.com" target="_blank"><img class="icon border fast" src="resources/images/icon-tumblr.png" width="256" height="256" alt="Tumblr"/></a>
+							</div>
+							<div class="right">
+								<a class="coverage" href="http://plus.google.com" target="_blank"><img class="icon border fast" src="resources/images/icon-plus.png" width="256" height="256" alt="Plus"/></a>
+							</div>
+							<div class="right">
+								<a class="coverage" href="http://www.linkedin.com" target="_blank"><img class="icon border fast" src="resources/images/icon-linkedin.png" width="256" height="256" alt="LinkedIn"/></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="right size-6">
+							<div class="left">
+								<a class="coverage" href="http://www.flickr.com" target="_blank"><img class="icon border fast" src="resources/images/icon-flickr.png" width="256" height="256" alt="Flickr"/></a>
+							</div>
+							<div class="left">
+								<a class="coverage" href="http://www.youtube.com" target="_blank"><img class="icon border fast" src="resources/images/icon-youtube.png" width="256" height="256" alt="YouTube"/></a>
+							</div>
+							<div class="left">
+								<a class="coverage" href="http://www.vimeo.com" target="_blank"><img class="icon border fast" src="resources/images/icon-vimeo.png" width="256" height="256" alt="Vimeo"/></a>
+							</div>
+							<div class="left">
+								<a class="coverage" href="http://www.instagram.com" target="_blank"><img class="icon border fast" src="resources/images/icon-instagram.png" width="256" height="256" alt="Instagram"/></a>
+							</div>
+							<div class="left">
+								<a class="coverage" href="http://www.dribbble.com" target="_blank"><img class="icon border fast" src="resources/images/icon-dribbble.png" width="256" height="256" alt="Dribbble"/></a>
+							</div>
+							<div class="left">
+								<a class="coverage" href="http://www.github.com" target="_blank"><img class="icon border fast" src="resources/images/icon-github.png" width="256" height="256" alt="GitHub"/></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(function () {
+						$("#contact").substitute($("<p>Thank you</p>").attr("class", "button border fast"));
+					});
+				</script>
+			</div>
+			<div id="map">
+				<div class="content"></div>
+				<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+				<script type="text/javascript">
+					$(function () {
+						$("#map").draw();
+					});
+				</script>
+			</div>
+			<div id="legal">
+				<div class="content">
+					<div class="wrap large">
+						<p class="copyright">2013 &copy; Mind - All rights reserved</p>
+					</div>
+				</div>
+				<script type="text/javascript"></script>
+			</div>
+		</div>
+	</body>
 </html>
